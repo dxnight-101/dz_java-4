@@ -1,13 +1,12 @@
 'use strict';
 let a = 1;
 let b = 1;
-function fibaNachi(n) {
-    for (let i = 1; i <= n; i++) {
-      let c = a + b; 
-      a = b; 
-      b = c;
-      console.log(c); 
-    }
+function fiboNachi(n) {
+  for (let i = 3; i <= n; i++) {
+    let c = a + b;
+    a = b;
+    b = c;
   }
-  fibaNachi(8);
-  
+  return b;
+}
+console.log(fiboNachi(8));
